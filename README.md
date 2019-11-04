@@ -2,11 +2,11 @@
 This code demonstrates how to create an app to run ussd codes.
 
 1. Add ussd permission
- <uses-permission android:name="android.permission.CALL_PHONE"/>
+         <uses-permission android:name="android.permission.CALL_PHONE"/>
  
  2.    
  
-   //we want to remove the last # from the ussd code as we need to encode it. so *555# becomes *555
+               //we want to remove the last # from the ussd code as we need to encode it. so *555# becomes *555
                     UssdCode = UssdCode.substring(0, UssdCode.length() - 1);
 
                     String UssdCodeNew = UssdCode + Uri.encode("#");
